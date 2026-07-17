@@ -4,7 +4,7 @@ import streamlit as st
 from modules.utils import step_header, reset_downstream
 from modules.preprocessing import detect_encoding_suggestion
 
-step_header("📂", "Pintu Masuk Data",
+step_header("📂", "Setup Data",
             "Unggah data Anda, lalu tentukan kolom mana yang dipakai sebagai fitur klasterisasi.")
 
 uploaded = st.file_uploader("Unggah file data (.xlsx atau .csv)", type=["xlsx", "xls", "csv"])
