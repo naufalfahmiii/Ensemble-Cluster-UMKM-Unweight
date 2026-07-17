@@ -4,7 +4,7 @@ from modules.utils import step_header, require_state, require_feature_mapping, d
 from modules.preprocessing import drop_duplicates, split_identity, build_typeaware, build_baseline
 from modules.visualization import numeric_distribution, categorical_distribution
 
-step_header("🧹", "Dapur Data",
+step_header("🧹", "Preprocessing",
             "Data mentah dibersihkan dan diramu menjadi dua representasi: satu untuk K-Prototypes & "
             "Gower K-Medoids (skala asli), satu lagi matriks siap-angka untuk K-Means.")
 
