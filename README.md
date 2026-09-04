@@ -8,9 +8,9 @@ menulis notebook.
 
 ## 🚀 Cara Menjalankan di VS Code
 
-1. Buka folder ini di VS Code.
+1. Buka folder ini di VS Code
 2. Buat virtual environment (disarankan):
-   ```bash
+   ```bash     
    python -m venv venv
    # Windows
    venv\Scripts\activate
@@ -73,7 +73,7 @@ di `app.py` (bukan otomatis dari nama file) — supaya lebih ramah dibaca, mis.
    rentang K yang dipilih.
 4. **Adu Performa Metode** — peringkat komposit (Silhouette, DBI, CHI) per metode.
 5. **Menyamakan Bahasa Label** — Hungarian alignment terhadap K-Means.
-6. **Musyawarah Mufakat** — voting mayoritas (equal-vote) antar 3 metode.
+6. **Musyawarah Mufakat** — majority voting (equal-vote) antar 3 metode.
 7. **Palang Pintu Akhir** — stability analysis (30 pengulangan default) → K final.
 8. **Uji Sensitivitas** *(opsional)* — bandingkan equal-vote vs quality-weighted vote.
 9. **Galeri Visual** — tren metrik vs K, sebaran PCA 2D per metode, ukuran cluster.
@@ -88,7 +88,7 @@ Notebook asli memakai nama kolom & aturan encoding spesifik (mis. kolom
 "NIB/SKU", "Sosmed", "Kepemilikan Lahan"). Karena dataset yang diunggah bisa
 berbeda-beda, aplikasi ini meminta Anda memetakan:
 
-- **Numerik** → dibersihkan dari format mata uang/pemisah ribuan (jika perlu),
+- **Numerik** → pembersihan format mata uang/pemisah ribuan (jika perlu),
   lalu IQR-clip + MinMax scaling (baseline) / z-score (K-Prototypes & Gower eval).
 - **Kategorikal biner** (2 kategori, mis. "Ada"/"Tidak Ada") → 0/1.
 - **Kategorikal multi-nilai** (dipisah koma, mis. daftar kanal pemasaran) →
